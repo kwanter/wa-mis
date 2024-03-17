@@ -8,12 +8,15 @@
 
 const repl = require('repl');
 
-const { Client, LocalAuth } = require('./index');
+const { Client, LocalAuth, Mis } = require('./index');
 
 const client = new Client({
     puppeteer: { headless: false }, 
     authStrategy: new LocalAuth()
 });
+
+const mis = new Mis();
+mis.getName();
 
 console.log('Initializing...');
 

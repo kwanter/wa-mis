@@ -29,5 +29,8 @@ module.exports = {
     RemoteAuth: require('./src/authStrategies/RemoteAuth'),
     LegacySessionAuth: require('./src/authStrategies/LegacySessionAuth'),
     
+    //MIS SIPP
+    Mis: require('./src/Mis'),
+
     ...Constants
 };
