@@ -9,10 +9,10 @@ class Mis {
     constructor(){
         console.log(`Your port is ${process.env.PORT}`); // 8626
         var con_pn = mysql.createConnection({
-            host: MYSQL_HOST,
-            user: MYSQL_USER,
-            password: MYSQL_PASSWORD,
-            database: MYSQL_DATABASE
+            host: process.env.MYSQL_HOST,
+            user: process.env.MYSQL_USER,
+            password: process.env.MYSQL_PASSWORD,
+            database: process.env.MYSQL_DATABASE
         });
     }
 
